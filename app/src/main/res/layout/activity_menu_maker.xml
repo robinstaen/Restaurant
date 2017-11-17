@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_green_200"
+    tools:context="com.example.aditya.restaurant.MenuMaker">
+
+
+    <EditText
+        android:id="@+id/nameOfDish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name of dish"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_above="@+id/Price"
+        android:layout_alignLeft="@+id/Price"
+        android:layout_alignStart="@+id/Price"
+        android:layout_marginBottom="44dp" />
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Price"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="233dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="67dp"
+        android:layout_marginEnd="67dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:onClick="addToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="340dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Price"
+        android:layout_alignEnd="@+id/Price" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="removeFromMenu"
+        android:layout_alignLeft="@+id/Price"
+        android:layout_alignStart="@+id/Price"
+        android:layout_alignTop="@+id/add"
+        android:text="Remove" />
+</RelativeLayout>

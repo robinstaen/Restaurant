@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/md_green_200"
+    android:background="@color/md_blue_grey_700"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.restaurant.Bill">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:id="@+id/bill"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bill"
+        android:textSize="30dp"
+        android:textColorHighlight="@color/md_amber_500"
+        android:textColor="@color/md_black_1000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="TextView" />
+</RelativeLayout>

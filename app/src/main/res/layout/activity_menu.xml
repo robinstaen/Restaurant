@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/md_blue_100"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.restaurant.Menu">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap the items you want to add"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/text1"
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/TheMenu"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text1">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/bill"
+        android:onClick="toBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="Get Bill" />
+
+</RelativeLayout>
